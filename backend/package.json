@@ -1,0 +1,22 @@
+{
+  "name": "express-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "4.16.4",
+    "nodemon": "1.18.10"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "7.11.2"
+  },
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+}
